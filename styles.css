@@ -1,0 +1,134 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Additional styles for logo and website name */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #fff; /* Text color */
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for book rows and covers */
+.book-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between items */
+    margin-bottom: 20px;
+	position: relative; /* Set position to relative */
+}
+
+.book {
+    text-align: center;
+    margin: 0 10px;
+	width: 30%; /* Set width to 30% to allow for equal spacing */
+}
+
+.book img {
+    border: 2px solid #333;
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.book p {
+    margin-top: 10px;
+}
+
+/* Add margin between top of second row's images and line */
+.book-row:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: -10px; /* Adjust the margin top as needed */
+    left: 0;
+    right: 0;
+    border-top: 2px solid #333; /* Add a top border */
+}
+
+/* Additional style for second row */
+.book-row:nth-child(2) {
+    margin-top: 20px; /* Add margin to top */
+}
+
+/* Additional style for second row book covers */
+.book-row:nth-child(2) .book img {
+    margin: 10px; /* Add margin around images */
+}
+
+/* Adjust alignment for each book cover */
+.book:nth-child(1) img {
+    margin-right: auto; /* Align first image to the left */
+}
+
+.book:nth-child(2) img {
+    margin: 0 auto; /* Center the second image */
+}
+
+.book:nth-child(3) img {
+    margin-left: auto; /* Align third image to the right */
+}

@@ -1,0 +1,46 @@
+Prompt for website logo (ideogram.ai): simplistic, cartoonish, sci-fi themed logo combining a book, a test tube and technology
+
+Prompt for book covers (ideogram.ai): sci-fi book cover in cinmeatic poster style
+
+Step by step prompts for building the website (ChatGPT):
+1:
+You're a professional web developer who specializes in HTML, CSS & Javascript. I'm your client and will be giving you instructions for you to carry out while building me a website. You're to take a deep breath, follow my instructions step by step, reply with code (include comments within the code) and check the code you provide for errors before sharing it with me. Once you provide the code, I'll be giving you additional instructions for you to adjust it. Reply with "yes" if you understand or reply with "no" if you don't.
+
+2:
+I want you to create a template for a portfolio/gallery website about sci-fi books. Provide me with both the HTML code and a CSS file.
+1. The website should be written in semantic HTML. In other words it should contain divisions, articles, a navigation panel and a footer.
+2. The website should adjust its contents based on the type of device used to view it.
+3. The top of the website should have a horizontal navigation panel equal to device width which contains the site logo and name on its left in horizontal allignment and three useful links on its right in horizontal allignment.
+4. Leave the middle area empty for now.
+5. The bottom of the website should have a horizontal footer equal to device width which contains the appropriate copyright information.
+
+3:
+Include 2 rows of vertical images of book covers in the body of the page.
+1. Each row should have 3 book covers and centered.
+2. There should be clear lines between each row to seperate them.
+3. Images of book covers within each row should have a frame/stroke.
+4. Titles of the books should be displayed below their cover images and be centered.
+
+4:
+Adjust the page so that the line seperating the rows is equal to device width and the 2nd row's book cover images have some distance between them and the line.
+
+5:
+Adjust the CSS file so that the 1st row doesn't have a line above it.
+
+6:
+Adjust the navigation panel so that the website name is displayed next to the logo.
+
+7:
+Generate 6 sci-fi book titles and insert them as title values.
+
+8:
+When displaying long titles beneath book covers, the images are pushed to the side. Adjust their css properties so that the first image in each row is left alligned, the 2nd one centered and the 3rd one right alligned.
+
+9:
+Adjust the website so that there's some margin between the top of the 2nd row's images and the line seperating the 2 rows.
+
+10:
+Write short summaries for the 6 sci-fi book names you've provided earlier and pass them as title attribute values for all of the 6 images.
+
+11:
+Add a catchy welcome message explaining what this website aims to do. This paragraph should come before the first row of book cover images.
